@@ -46,6 +46,8 @@ img {
     padding: 0;
     white-space: nowrap;
     overflow: hidden;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
 }
 
 /* Reset */
@@ -142,7 +144,7 @@ p {
 .contacts-list {
     display: flex;
     align-items: center;
-    gap: 24px;
+    gap: 40px;
 }
 
 .contacts-link {
@@ -173,6 +175,8 @@ p {
 
 .hero-button {
     display: block;
+    min-width: 169px;
+    height: 56px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -180,6 +184,7 @@ p {
     color: #fff;
     background-color: #4d5ae5;
     border-radius: 4px;
+    border: none;
     padding: 16px 32px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     margin: 0 auto;
@@ -199,6 +204,9 @@ p {
 .benefits-list {
     display: flex;
     gap: 24px;
+}
+
+.benefits-item {
     flex-basis: calc((100% - 72px) / 4);
 }
 
@@ -217,17 +225,17 @@ p {
 
 .team-section {
     background-color: #f4f4fd;
-    padding: 120px 0 72px 0;
+    padding: 120px 0;
 }
 
 .team-list {
     display: flex;
-    flex-basis: calc((100% - 72px) / 4);
     gap: 24px;
     padding-bottom: 120px;
 }
 
 .team-list-item {
+    flex-basis: calc((100% - 72px) / 4);
     background-color: #ffffff;
     border-radius: 0 0 4px 4px;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
@@ -235,7 +243,7 @@ p {
 }
 
 .team-card-capture {
-    margin: 32px 16px;
+    margin: 32px 0;
     text-align: center;
 }
 
@@ -249,6 +257,9 @@ p {
     display: flex;
     flex-wrap: wrap;
     gap: 48px 24px;
+}
+
+.portfolio-item {
     flex-basis: calc((100% - 48px) / 3);
 }
 
@@ -270,7 +281,7 @@ p {
 }
 
 .footer-logo {
-    display: block;
+    display: inline-block;
     margin-bottom: 16px;
 }
 
