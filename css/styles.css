@@ -231,7 +231,6 @@ p {
 .team-list {
     display: flex;
     gap: 24px;
-    padding-bottom: 120px;
 }
 
 .team-list-item {
